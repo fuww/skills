@@ -1,4 +1,7 @@
 # Skills
+
+This is FashionUnited's curated collection of Claude skills, adapted from Anthropic's official skills repository with customizations specific to our B2B fashion platform.
+
 Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, whether that's creating documents with your company's brand guidelines, analyzing data using your organization's specific workflows, or automating personal tasks.
 
 For more information, check out:
@@ -9,13 +12,17 @@ For more information, check out:
 
 # About This Repository
 
-This repository contains example skills that demonstrate what's possible with Claude's skills system. These examples range from creative applications (art, music, design) to technical tasks (testing web apps, MCP server generation) to enterprise workflows (communications, branding, etc.).
+This repository contains skills customized for FashionUnited's use with Claude Skills. These skills range from creative applications (art, design) to technical tasks (testing web apps, MCP server generation) to enterprise workflows (communications, branding, etc.).
+
+**Key FashionUnited Customizations:**
+- **brand-guidelines** - Updated with FashionUnited's rose color palette, typography, and Material Design standards
+- Additional skills may be customized or added based on FashionUnited-specific workflows
 
 Each skill is self-contained in its own directory with a `SKILL.md` file containing the instructions and metadata that Claude uses. Browse through these examples to get inspiration for your own skills or to understand different patterns and approaches.
 
-The example skills in this repo are open source (Apache 2.0). We've also included the document creation & editing skills that power [Claude's document capabilities](https://www.anthropic.com/news/create-files) under the hood in the [`document-skills/`](./document-skills/) folder. These are source-available, not open source, but we wanted to share these with developers as a reference for more complex skills that are actively used in a production AI application.
+The example skills in this repo are based on Anthropic's open source skills (Apache 2.0). We've also included the document creation & editing skills in the [`document-skills/`](./document-skills/) folder as reference examples, created by Anthropic.
 
-**Note:** These are reference examples for inspiration and learning. They showcase general-purpose capabilities rather than organization-specific workflows or sensitive content.
+**Note:** This repository is maintained by FashionUnited for internal use and customized to our platform's needs.
 
 ## Disclaimer
 
@@ -36,7 +43,7 @@ This repository includes a diverse collection of example skills demonstrating di
 - **webapp-testing** - Test local web applications using Playwright for UI verification and debugging
 
 ## Enterprise & Communication
-- **brand-guidelines** - Apply Anthropic's official brand colors and typography to artifacts
+- **brand-guidelines** - Apply FashionUnited's official brand colors and typography to artifacts (rose #ea0151, Helvetica Neue, Material Design)
 - **internal-comms** - Write internal communications like status reports, newsletters, and FAQs
 - **theme-factory** - Style artifacts with 10 pre-set professional themes or generate custom themes on-the-fly
 
@@ -55,31 +62,41 @@ The `document-skills/` subdirectory contains skills that Anthropic developed to 
 
 **Important Disclaimer:** These document skills are point-in-time snapshots and are not actively maintained or updated. Versions of these skills ship pre-included with Claude. They are primarily intended as reference examples to illustrate how Anthropic approaches developing more complex skills that work with binary file formats and document structures.
 
-# Try in Claude Code, Claude.ai, and the API
+# Installing FashionUnited Skills
 
 ## Claude Code
+
 You can register this repository as a Claude Code Plugin marketplace by running the following command in Claude Code:
 ```
-/plugin marketplace add anthropics/skills
+/plugin marketplace add fuww/skills
 ```
 
 Then, to install a specific set of skills:
 1. Select `Browse and install plugins`
-2. Select `anthropic-agent-skills`
+2. Select `fashionunited-skills`
 3. Select `document-skills` or `example-skills`
 4. Select `Install now`
 
 Alternatively, directly install either Plugin via:
 ```
-/plugin install document-skills@anthropic-agent-skills
-/plugin install example-skills@anthropic-agent-skills
+/plugin install document-skills@fashionunited-skills
+/plugin install example-skills@fashionunited-skills
 ```
 
-After installing the plugin, you can use the skill by just mentioning it. For instance, if you install the `document-skills` plugin from the marketplace, you can ask Claude Code to do something like: "Use the PDF skill to extract the form fields from path/to/some-file.pdf"
+**Quick Start for FashionUnited Developers:**
+```
+/plugin marketplace add fuww/skills
+/plugin install example-skills@fashionunited-skills
+```
+
+After installing the plugin, you can use the skill by just mentioning it. For instance:
+- "Use the brand-guidelines skill to style this presentation with FashionUnited colors"
+- "Use the PDF skill to extract the form fields from path/to/some-file.pdf"
+- "Use the xlsx skill to analyze the sales data in path/to/report.xlsx"
 
 ## Claude.ai
 
-These example skills are all already available to paid plans in Claude.ai. 
+These example skills are all already available to paid plans in Claude.ai.
 
 To use any skill from this repository or upload custom skills, follow the instructions in [Using skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude#h_a4222fa77b).
 

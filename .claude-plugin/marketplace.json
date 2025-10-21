@@ -1,11 +1,11 @@
 {
-  "name": "anthropic-agent-skills",
+  "name": "fashionunited-skills",
   "owner": {
-    "name": "Keith Lazuka",
-    "email": "klazuka@anthropic.com"
+    "name": "FashionUnited",
+    "email": "joost@fashionunited.com"
   },
   "metadata": {
-    "description": "Anthropic example skills",
+    "description": "FashionUnited customized skills for B2B fashion platform development",
     "version": "1.0.0"
   },
   "plugins": [

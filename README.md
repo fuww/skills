@@ -10,6 +10,37 @@ For more information, check out:
 - [How to create custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills)
 - [Equipping agents for the real world with Agent Skills](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
 
+# Quick Start for Claude Web
+
+1. Clone the repo
+2. Create a zip of 1 skill
+3. Upload to Claude web (admin can do it for whole org.)
+
+# Quick Start for Claude Code
+
+## Add a marketplace
+
+https://code.claude.com/docs/en/plugin-marketplaces
+
+Use `/plugin` in Claude Code or:
+
+```bash
+# Official Anthropic
+/plugin marketplace add anthropics/claude-code
+# FashionUnited Custom
+/plugin marketplace add fuww/skills
+```
+
+## Install skill
+
+Use `/plugin` in Claude Code or:
+
+```bash
+/plugin install plugin-name@marketplace-name
+
+/plugin install example-skills@fashionunited-skills
+```
+
 # About This Repository
 
 This repository contains skills customized for FashionUnited's use with Claude Skills. These skills range from creative applications (art, design) to technical tasks (testing web apps, MCP server generation) to enterprise workflows (communications, branding, etc.).

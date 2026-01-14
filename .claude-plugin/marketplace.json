@@ -1,5 +1,5 @@
 {
-  "name": "fashionunited-skills",
+  "name": "fashionunited",
   "owner": {
     "name": "FashionUnited",
     "email": "joost@fashionunited.com"
@@ -10,12 +10,13 @@
   },
   "plugins": [
     {
-      "name": "fashionunited-skills",
+      "name": "skills",
       "description": "Collection of FashionUnited skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/brand-guidelines-fashionunited"
+        "./skills/brand-guidelines-fashionunited",
+        "./skills/shell-scripting"
       ]
     }
   ]

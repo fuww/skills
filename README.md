@@ -38,7 +38,7 @@ Use `/plugin` in Claude Code or:
 ```bash
 /plugin install plugin-name@marketplace-name
 
-/plugin install example-skills@fashionunited-skills
+/plugin install skills@fashionunited
 ```
 
 # About This Repository
@@ -102,22 +102,21 @@ You can register this repository as a Claude Code Plugin marketplace by running 
 /plugin marketplace add fuww/skills
 ```
 
-Then, to install a specific set of skills:
+Then, to install the skills:
 1. Select `Browse and install plugins`
-2. Select `fashionunited-skills`
-3. Select `document-skills` or `example-skills`
+2. Select `fashionunited`
+3. Select `skills`
 4. Select `Install now`
 
-Alternatively, directly install either Plugin via:
+Alternatively, directly install via:
 ```
-/plugin install document-skills@fashionunited-skills
-/plugin install example-skills@fashionunited-skills
+/plugin install skills@fashionunited
 ```
 
 **Quick Start for FashionUnited Developers:**
 ```
 /plugin marketplace add fuww/skills
-/plugin install example-skills@fashionunited-skills
+/plugin install skills@fashionunited
 ```
 
 After installing the plugin, you can use the skill by just mentioning it. For instance:

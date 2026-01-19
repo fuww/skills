@@ -1,0 +1,56 @@
+name: Build and Release Skills
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create ZIP files for each skill
+        run: |
+          mkdir -p dist
+          for skill_dir in skills/*/; do
+            skill_name=$(basename "$skill_dir")
+            echo "Packaging skill: $skill_name"
+            (cd skills && zip -r "../dist/${skill_name}.zip" "$skill_name")
+          done
+          echo "Created ZIP files:"
+          ls -la dist/
+
+      - name: Delete existing latest release
+        run: |
+          gh release delete latest --yes || true
+          git push origin :refs/tags/latest || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create latest release
+        run: |
+          gh release create latest \
+            --title "Latest Skills" \
+            --notes "Auto-generated release containing all skills as ZIP files.
+
+          ## Download Links
+          $(for f in dist/*.zip; do
+            name=$(basename "$f")
+            echo "- [$name](https://github.com/${{ github.repository }}/releases/download/latest/$name)"
+          done)
+
+          ---
+          *Updated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')*
+          *Commit: ${{ github.sha }}*" \
+            --latest \
+            dist/*.zip
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

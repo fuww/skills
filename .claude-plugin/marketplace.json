@@ -16,6 +16,7 @@
       "strict": false,
       "skills": [
         "./skills/brand-guidelines-fashionunited",
+        "./skills/mt-updates-fashionunited",
         "./skills/shell-scripting"
       ]
     }

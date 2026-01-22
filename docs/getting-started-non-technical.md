@@ -33,7 +33,7 @@ Skills are like "superpowers" you can give Claude to help with specific tasks. I
 
 ### In Claude.ai (Web)
 Simply mention the skill by name in your conversation:
-> "Use the **copywriting** skill to improve this landing page text"
+> "Use the **copywriting-fashionunited** skill to improve this landing page text"
 
 ### In Claude Code (Desktop App)
 Type `/skill` followed by the skill name, or just mention it naturally.
@@ -46,30 +46,30 @@ Type `/skill` followed by the skill name, or just mention it naturally.
 
 | Skill | What It Does | Example Use |
 |-------|--------------|-------------|
-| **copywriting** | Write/improve marketing copy for any page | "Use copywriting to rewrite our pricing page headline" |
-| **page-cro** | Optimize pages for better conversions | "Use page-cro to analyze why our signup page isn't converting" |
-| **seo-audit** | Diagnose SEO issues | "Use seo-audit to check our blog post for SEO problems" |
-| **social-content** | Create social media posts | "Use social-content to create a LinkedIn post about our new feature" |
-| **launch-strategy** | Plan product launches | "Use launch-strategy to plan our Q2 feature announcement" |
-| **marketing-ideas** | Get marketing inspiration | "Use marketing-ideas for ways to promote our newsletter" |
-| **analytics-tracking** | Set up proper tracking | "Use analytics-tracking to review our GA4 setup" |
+| **copywriting-fashionunited** | Write/improve marketing copy for any page | "Use copywriting to rewrite our pricing page headline" |
+| **page-cro-fashionunited** | Optimize pages for better conversions | "Use page-cro to analyze why our signup page isn't converting" |
+| **seo-audit-fashionunited** | Diagnose SEO issues | "Use seo-audit to check our blog post for SEO problems" |
+| **social-content-fashionunited** | Create social media posts | "Use social-content to create a LinkedIn post about our new feature" |
+| **launch-strategy-fashionunited** | Plan product launches | "Use launch-strategy to plan our Q2 feature announcement" |
+| **marketing-ideas-fashionunited** | Get marketing inspiration | "Use marketing-ideas for ways to promote our newsletter" |
+| **analytics-tracking-fashionunited** | Set up proper tracking | "Use analytics-tracking to review our GA4 setup" |
 
 ### For Sales
 
 | Skill | What It Does | Example Use |
 |-------|--------------|-------------|
-| **copywriting** | Write compelling sales copy | "Use copywriting to improve our outreach email" |
-| **pricing-strategy** | Help with pricing decisions | "Use pricing-strategy to evaluate our tier structure" |
+| **copywriting-fashionunited** | Write compelling sales copy | "Use copywriting to improve our outreach email" |
+| **pricing-strategy-fashionunited** | Help with pricing decisions | "Use pricing-strategy to evaluate our tier structure" |
 | **brand-guidelines-fashionunited** | Keep materials on-brand | "Use brand-guidelines to style this sales deck" |
 
 ### For Editorial
 
 | Skill | What It Does | Example Use |
 |-------|--------------|-------------|
-| **article-extractor** | Pull clean text from URLs | "Use article-extractor to get the text from this competitor article" |
-| **youtube-transcript** | Get video transcripts | "Use youtube-transcript to transcribe this industry talk" |
-| **obsidian-markdown** | Format notes properly | "Use obsidian-markdown to format this research note" |
-| **doc-coauthoring** | Collaborate on documents | "Use doc-coauthoring to help me write this style guide" |
+| **article-extractor-fashionunited** | Pull clean text from URLs | "Use article-extractor to get the text from this competitor article" |
+| **youtube-transcript-fashionunited** | Get video transcripts | "Use youtube-transcript to transcribe this industry talk" |
+| **obsidian-markdown-fashionunited** | Format notes properly | "Use obsidian-markdown to format this research note" |
+| **doc-coauthoring-fashionunited** | Collaborate on documents | "Use doc-coauthoring to help me write this style guide" |
 
 ---
 

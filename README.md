@@ -46,7 +46,8 @@ Use `/plugin` in Claude Code or:
 This repository contains skills customized for FashionUnited's use with Claude Skills. These skills range from creative applications (art, design) to technical tasks (testing web apps, MCP server generation) to enterprise workflows (communications, branding, etc.).
 
 **Key FashionUnited Customizations:**
-- **brand-guidelines** - Updated with FashionUnited's rose color palette, typography, and Material Design standards
+- **brand-guidelines-fashionunited** - Updated with FashionUnited's rose color palette, typography, and Material Design standards
+- All skills have the `-fashionunited` suffix to prevent conflicts with other installed skills
 - Additional skills may be customized or added based on FashionUnited-specific workflows
 
 Each skill is self-contained in its own directory with a `SKILL.md` file containing the instructions and metadata that Claude uses. Browse through these examples to get inspiration for your own skills or to understand different patterns and approaches.
@@ -63,100 +64,99 @@ The example skills in this repo are based on Anthropic's open source skills (Apa
 
 | Skill | Description |
 |-------|-------------|
-| algorithmic-art | Create generative art using p5.js with seeded randomness, flow fields, and particle systems |
-| analytics-tracking | Set up, improve, or audit analytics tracking and measurement |
-| article-extractor | Extract clean article content from URLs without ads or clutter |
-| beads | Track work sessions and context across conversations |
-| brainstorming | Refine rough ideas into fully-formed designs through Socratic questioning |
+| algorithmic-art-fashionunited | Create generative art using p5.js with seeded randomness, flow fields, and particle systems |
+| analytics-tracking-fashionunited | Set up, improve, or audit analytics tracking and measurement |
+| article-extractor-fashionunited | Extract clean article content from URLs without ads or clutter |
+| beads-fashionunited | Track work sessions and context across conversations |
+| brainstorming-fashionunited | Refine rough ideas into fully-formed designs through Socratic questioning |
 | brand-guidelines-fashionunited | Apply FashionUnited's official brand colors and typography |
-| canvas-design | Design beautiful visual art in .png and .pdf formats using design philosophies |
-| cass | Coding Agent Session Search - search local coding agent history |
-| codex | Run Codex CLI for code analysis, refactoring, or automated editing |
-| condition-based-waiting | Replace arbitrary timeouts with condition polling for flaky tests |
-| copywriting | Write or improve marketing copy for pages |
-| defense-in-depth | Validate at every layer to make bugs structurally impossible |
-| dispatching-parallel-agents | Dispatch multiple agents to investigate independent problems concurrently |
-| doc-coauthoring | Structured workflow for co-authoring documentation |
-| docx | Create, edit, and analyze Word documents with tracked changes and comments |
-| executing-plans | Execute implementation plans in controlled batches with review checkpoints |
-| finishing-a-development-branch | Guide completion of development work with merge, PR, or cleanup options |
-| frontend-design | Create distinctive, production-grade frontend interfaces |
-| gemini | Run Gemini CLI for code review or big context (>200k) processing |
-| internal-comms | Write internal communications (status reports, newsletters, FAQs) |
-| launch-strategy | Plan product launches, feature announcements, or release strategies |
-| marketing-ideas | Marketing ideas and strategies for SaaS or software products |
-| mcp-builder | Guide for creating high-quality MCP servers to integrate external APIs |
+| canvas-design-fashionunited | Design beautiful visual art in .png and .pdf formats using design philosophies |
+| cass-fashionunited | Coding Agent Session Search - search local coding agent history |
+| codex-fashionunited | Run Codex CLI for code analysis, refactoring, or automated editing |
+| condition-based-waiting-fashionunited | Replace arbitrary timeouts with condition polling for flaky tests |
+| copywriting-fashionunited | Write or improve marketing copy for pages |
+| defense-in-depth-fashionunited | Validate at every layer to make bugs structurally impossible |
+| dispatching-parallel-agents-fashionunited | Dispatch multiple agents to investigate independent problems concurrently |
+| doc-coauthoring-fashionunited | Structured workflow for co-authoring documentation |
+| docx-fashionunited | Create, edit, and analyze Word documents with tracked changes and comments |
+| executing-plans-fashionunited | Execute implementation plans in controlled batches with review checkpoints |
+| finishing-a-development-branch-fashionunited | Guide completion of development work with merge, PR, or cleanup options |
+| frontend-design-fashionunited | Create distinctive, production-grade frontend interfaces |
+| gemini-fashionunited | Run Gemini CLI for code review or big context (>200k) processing |
+| internal-comms-fashionunited | Write internal communications (status reports, newsletters, FAQs) |
+| launch-strategy-fashionunited | Plan product launches, feature announcements, or release strategies |
+| marketing-ideas-fashionunited | Marketing ideas and strategies for SaaS or software products |
+| mcp-builder-fashionunited | Guide for creating high-quality MCP servers to integrate external APIs |
 | mt-updates-fashionunited | Write monthly Management Team updates for FashionUnited |
-| notebooklm-skill | Query Google NotebookLM for source-grounded answers |
-| obsidian-markdown | Create Obsidian Flavored Markdown with wikilinks, callouts, etc. |
-| page-cro | Optimize conversions on marketing pages |
-| pdf | Comprehensive PDF manipulation toolkit for extracting, creating, and merging PDFs |
-| pptx | Create, edit, and analyze PowerPoint presentations with layouts and charts |
-| pricing-strategy | Help with pricing decisions, packaging, or monetization |
-| receiving-code-review | Handle code review feedback with technical rigor |
-| remotion-best-practices | Best practices for Remotion video creation in React |
-| requesting-code-review | Dispatch code-reviewer subagent to review implementation |
-| root-cause-tracing | Trace bugs backward through call stack to identify source |
-| seo-audit | Audit, review, or diagnose SEO issues |
-| sharing-skills | Contribute skills upstream via pull request |
-| shell-scripting | Bash scripting with defensive programming and ShellCheck compliance |
-| ship-learn-next | Transform learning content into actionable implementation plans |
-| skill-creator | Guide for creating effective skills |
-| slack-gif-creator | Create animated GIFs optimized for Slack's size constraints |
-| social-content | Create and optimize social media content |
-| specification-document-generator | Generate architectural documents with requirements traceability |
-| subagent-driven-development | Execute plans with fresh subagent per task and code review |
-| systematic-debugging | Four-phase debugging framework ensuring understanding before fixes |
-| tapestry | Unified content extraction and action planning from URLs |
-| test-driven-development | Write tests first, watch fail, write minimal code to pass |
-| testing-anti-patterns | Prevent testing mock behavior and production pollution |
-| testing-skills-with-subagents | Test skills with subagents before deployment |
-| theme-factory | Style artifacts with pre-set professional themes or custom themes on-the-fly |
-| using-git-worktrees | Create isolated git worktrees for feature work |
-| using-superpowers | Establish mandatory workflows for finding and using skills |
-| vercel-react-best-practices | React and Next.js performance optimization from Vercel Engineering |
-| vercel-web-design-guidelines | Review UI code for Web Interface Guidelines compliance |
-| verification-before-completion | Require running verification before claiming work complete |
-| web-artifacts-builder | Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui |
-| webapp-testing | Test local web applications using Playwright for UI verification and debugging |
-| web-design-guidelines | Review UI code for accessibility and best practices |
-| worktrees | Use git worktrees to parallelize development with agents |
-| writing-plans | Create implementation plans with exact file paths and code examples |
-| writing-skills | Create and test skills with TDD approach |
-| xlsx | Create, edit, and analyze Excel spreadsheets with formulas and visualization |
-| youtube-transcript | Download YouTube video transcripts |
+| notebooklm-skill-fashionunited | Query Google NotebookLM for source-grounded answers |
+| obsidian-markdown-fashionunited | Create Obsidian Flavored Markdown with wikilinks, callouts, etc. |
+| page-cro-fashionunited | Optimize conversions on marketing pages |
+| pdf-fashionunited | Comprehensive PDF manipulation toolkit for extracting, creating, and merging PDFs |
+| pptx-fashionunited | Create, edit, and analyze PowerPoint presentations with layouts and charts |
+| pricing-strategy-fashionunited | Help with pricing decisions, packaging, or monetization |
+| receiving-code-review-fashionunited | Handle code review feedback with technical rigor |
+| remotion-best-practices-fashionunited | Best practices for Remotion video creation in React |
+| requesting-code-review-fashionunited | Dispatch code-reviewer subagent to review implementation |
+| root-cause-tracing-fashionunited | Trace bugs backward through call stack to identify source |
+| seo-audit-fashionunited | Audit, review, or diagnose SEO issues |
+| sharing-skills-fashionunited | Contribute skills upstream via pull request |
+| shell-scripting-fashionunited | Bash scripting with defensive programming and ShellCheck compliance |
+| ship-learn-next-fashionunited | Transform learning content into actionable implementation plans |
+| skill-creator-fashionunited | Guide for creating effective skills |
+| slack-gif-creator-fashionunited | Create animated GIFs optimized for Slack's size constraints |
+| social-content-fashionunited | Create and optimize social media content |
+| specification-document-generator-fashionunited | Generate architectural documents with requirements traceability |
+| subagent-driven-development-fashionunited | Execute plans with fresh subagent per task and code review |
+| systematic-debugging-fashionunited | Four-phase debugging framework ensuring understanding before fixes |
+| tapestry-fashionunited | Unified content extraction and action planning from URLs |
+| test-driven-development-fashionunited | Write tests first, watch fail, write minimal code to pass |
+| testing-anti-patterns-fashionunited | Prevent testing mock behavior and production pollution |
+| testing-skills-with-subagents-fashionunited | Test skills with subagents before deployment |
+| theme-factory-fashionunited | Style artifacts with pre-set professional themes or custom themes on-the-fly |
+| using-git-worktrees-fashionunited | Create isolated git worktrees for feature work |
+| using-superpowers-fashionunited | Establish mandatory workflows for finding and using skills |
+| vercel-react-best-practices-fashionunited | React and Next.js performance optimization from Vercel Engineering |
+| vercel-web-design-guidelines-fashionunited | Review UI code for Web Interface Guidelines compliance |
+| verification-before-completion-fashionunited | Require running verification before claiming work complete |
+| web-artifacts-builder-fashionunited | Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui |
+| webapp-testing-fashionunited | Test local web applications using Playwright for UI verification and debugging |
+| web-design-guidelines-fashionunited | Review UI code for accessibility and best practices |
+| worktrees-fashionunited | Use git worktrees to parallelize development with agents |
+| writing-plans-fashionunited | Create implementation plans with exact file paths and code examples |
+| writing-skills-fashionunited | Create and test skills with TDD approach |
+| xlsx-fashionunited | Create, edit, and analyze Excel spreadsheets with formulas and visualization |
+| youtube-transcript-fashionunited | Download YouTube video transcripts |
 
 # Example Skills
 
 This repository includes a diverse collection of example skills demonstrating different capabilities:
 
 ## Creative & Design
-- **algorithmic-art** - Create generative art using p5.js with seeded randomness, flow fields, and particle systems
-- **canvas-design** - Design beautiful visual art in .png and .pdf formats using design philosophies
-- **slack-gif-creator** - Create animated GIFs optimized for Slack's size constraints
+- **algorithmic-art-fashionunited** - Create generative art using p5.js with seeded randomness, flow fields, and particle systems
+- **canvas-design-fashionunited** - Design beautiful visual art in .png and .pdf formats using design philosophies
+- **slack-gif-creator-fashionunited** - Create animated GIFs optimized for Slack's size constraints
 
 ## Development & Technical
-- **artifacts-builder** - Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui components
-- **mcp-server** - Guide for creating high-quality MCP servers to integrate external APIs and services
-- **webapp-testing** - Test local web applications using Playwright for UI verification and debugging
+- **web-artifacts-builder-fashionunited** - Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui components
+- **mcp-builder-fashionunited** - Guide for creating high-quality MCP servers to integrate external APIs and services
+- **webapp-testing-fashionunited** - Test local web applications using Playwright for UI verification and debugging
 
 ## Enterprise & Communication
-- **brand-guidelines** - Apply FashionUnited's official brand colors and typography to artifacts (rose #ea0151, Helvetica Neue, Material Design)
-- **internal-comms** - Write internal communications like status reports, newsletters, and FAQs
-- **theme-factory** - Style artifacts with 10 pre-set professional themes or generate custom themes on-the-fly
+- **brand-guidelines-fashionunited** - Apply FashionUnited's official brand colors and typography to artifacts (rose #ea0151, Helvetica Neue, Material Design)
+- **internal-comms-fashionunited** - Write internal communications like status reports, newsletters, and FAQs
+- **theme-factory-fashionunited** - Style artifacts with 10 pre-set professional themes or generate custom themes on-the-fly
 
 ## Meta Skills
-- **skill-creator** - Guide for creating effective skills that extend Claude's capabilities
-- **template-skill** - A basic template to use as a starting point for new skills
+- **skill-creator-fashionunited** - Guide for creating effective skills that extend Claude's capabilities
 
 # Document Skills
 
 The `document-skills/` subdirectory contains skills that Anthropic developed to help Claude create various document file formats. These skills demonstrate advanced patterns for working with complex file formats and binary data:
 
-- **docx** - Create, edit, and analyze Word documents with support for tracked changes, comments, formatting preservation, and text extraction
-- **pdf** - Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms
-- **pptx** - Create, edit, and analyze PowerPoint presentations with support for layouts, templates, charts, and automated slide generation
-- **xlsx** - Create, edit, and analyze Excel spreadsheets with support for formulas, formatting, data analysis, and visualization
+- **docx-fashionunited** - Create, edit, and analyze Word documents with support for tracked changes, comments, formatting preservation, and text extraction
+- **pdf-fashionunited** - Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms
+- **pptx-fashionunited** - Create, edit, and analyze PowerPoint presentations with support for layouts, templates, charts, and automated slide generation
+- **xlsx-fashionunited** - Create, edit, and analyze Excel spreadsheets with support for formulas, formatting, data analysis, and visualization
 
 **Important Disclaimer:** These document skills are point-in-time snapshots and are not actively maintained or updated. Versions of these skills ship pre-included with Claude. They are primarily intended as reference examples to illustrate how Anthropic approaches developing more complex skills that work with binary file formats and document structures.
 
@@ -187,9 +187,9 @@ Alternatively, directly install via:
 ```
 
 After installing the plugin, you can use the skill by just mentioning it. For instance:
-- "Use the brand-guidelines skill to style this presentation with FashionUnited colors"
-- "Use the PDF skill to extract the form fields from path/to/some-file.pdf"
-- "Use the xlsx skill to analyze the sales data in path/to/report.xlsx"
+- "Use the brand-guidelines-fashionunited skill to style this presentation with FashionUnited colors"
+- "Use the pdf-fashionunited skill to extract the form fields from path/to/some-file.pdf"
+- "Use the xlsx-fashionunited skill to analyze the sales data in path/to/report.xlsx"
 
 ## Claude.ai
 

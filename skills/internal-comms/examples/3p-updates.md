@@ -13,7 +13,7 @@ Before writing them, make sure that you know the team name. If it's not specifie
 
 ## Tools Available
 Whenever possible, try to pull from available sources to get the information you need:
-- Slack: posts from team members with their updates - ideally look for posts in large channels with lots of reactions
+- Google Chat: posts from team members with their updates - ideally look for posts in large channels with lots of reactions
 - Google Drive: docs written from critical team members with lots of views
 - Email: emails with lots of responses of lots of content that seems relevant
 - Calendar: non-recurring meetings that have a lot of importance, like product reviews, etc.

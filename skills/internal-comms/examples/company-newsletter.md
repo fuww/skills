@@ -1,15 +1,15 @@
 ## Instructions
-You are being asked to write a company-wide newsletter update. You are meant to summarize the past week/month of a company in the form of a newsletter that the entire company will read. It should be maybe ~20-25 bullet points long. It will be sent via Slack and email, so make it consumable for that.
+You are being asked to write a company-wide newsletter update. You are meant to summarize the past week/month of a company in the form of a newsletter that the entire company will read. It should be maybe ~20-25 bullet points long. It will be sent via Google Chat and email, so make it consumable for that.
 
 Ideally it includes the following attributes:
-- Lots of links: pulling documents from Google Drive that are very relevant, linking to prominent Slack messages in announce channels and from executives, perhgaps referencing emails that went company-wide, highlighting significant things that have happened in the company.
+- Lots of links: pulling documents from Google Drive that are very relevant, linking to prominent Google Chat messages in announce channels and from executives, perhgaps referencing emails that went company-wide, highlighting significant things that have happened in the company.
 - Short and to-the-point: each bullet should probably be no longer than ~1-2 sentences
 - Use the "we" tense, as you are part of the company. Many of the bullets should say "we did this" or "we did that"
 
 ## Tools to use
 If you have access to the following tools, please try to use them. If not, you can also let the user know directly that their responses would be better if they gave them access.
 
-- Slack: look for messages in channels with lots of people, with lots of reactions or lots of responses within the thread
+- Google Chat: look for messages in channels with lots of people, with lots of reactions or lots of responses within the thread
 - Email: look for things from executives that discuss company-wide announcements
 - Calendar: if there were meetings with large attendee lists, particularly things like All-Hands meetings, big company announcements, etc. If there were documents attached to those meetings, those are great links to include.
 - Documents: if there were new docs published in the last week or two that got a lot of attention, you can link them. These should be things like company-wide vision docs, plans for the upcoming quarter or half, things authored by critical executives, etc.

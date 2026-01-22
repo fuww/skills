@@ -63,11 +63,13 @@ The example skills in this repo are based on Anthropic's open source skills (Apa
 
 | Skill | Description |
 |-------|-------------|
+| algorithmic-art | Create generative art using p5.js with seeded randomness, flow fields, and particle systems |
 | analytics-tracking | Set up, improve, or audit analytics tracking and measurement |
 | article-extractor | Extract clean article content from URLs without ads or clutter |
 | beads | Track work sessions and context across conversations |
 | brainstorming | Refine rough ideas into fully-formed designs through Socratic questioning |
 | brand-guidelines-fashionunited | Apply FashionUnited's official brand colors and typography |
+| canvas-design | Design beautiful visual art in .png and .pdf formats using design philosophies |
 | cass | Coding Agent Session Search - search local coding agent history |
 | codex | Run Codex CLI for code analysis, refactoring, or automated editing |
 | condition-based-waiting | Replace arbitrary timeouts with condition polling for flaky tests |
@@ -75,6 +77,7 @@ The example skills in this repo are based on Anthropic's open source skills (Apa
 | defense-in-depth | Validate at every layer to make bugs structurally impossible |
 | dispatching-parallel-agents | Dispatch multiple agents to investigate independent problems concurrently |
 | doc-coauthoring | Structured workflow for co-authoring documentation |
+| docx | Create, edit, and analyze Word documents with tracked changes and comments |
 | executing-plans | Execute implementation plans in controlled batches with review checkpoints |
 | finishing-a-development-branch | Guide completion of development work with merge, PR, or cleanup options |
 | frontend-design | Create distinctive, production-grade frontend interfaces |
@@ -82,10 +85,13 @@ The example skills in this repo are based on Anthropic's open source skills (Apa
 | internal-comms | Write internal communications (status reports, newsletters, FAQs) |
 | launch-strategy | Plan product launches, feature announcements, or release strategies |
 | marketing-ideas | Marketing ideas and strategies for SaaS or software products |
+| mcp-builder | Guide for creating high-quality MCP servers to integrate external APIs |
 | mt-updates-fashionunited | Write monthly Management Team updates for FashionUnited |
 | notebooklm-skill | Query Google NotebookLM for source-grounded answers |
 | obsidian-markdown | Create Obsidian Flavored Markdown with wikilinks, callouts, etc. |
 | page-cro | Optimize conversions on marketing pages |
+| pdf | Comprehensive PDF manipulation toolkit for extracting, creating, and merging PDFs |
+| pptx | Create, edit, and analyze PowerPoint presentations with layouts and charts |
 | pricing-strategy | Help with pricing decisions, packaging, or monetization |
 | receiving-code-review | Handle code review feedback with technical rigor |
 | remotion-best-practices | Best practices for Remotion video creation in React |
@@ -96,6 +102,7 @@ The example skills in this repo are based on Anthropic's open source skills (Apa
 | shell-scripting | Bash scripting with defensive programming and ShellCheck compliance |
 | ship-learn-next | Transform learning content into actionable implementation plans |
 | skill-creator | Guide for creating effective skills |
+| slack-gif-creator | Create animated GIFs optimized for Slack's size constraints |
 | social-content | Create and optimize social media content |
 | specification-document-generator | Generate architectural documents with requirements traceability |
 | subagent-driven-development | Execute plans with fresh subagent per task and code review |
@@ -104,15 +111,19 @@ The example skills in this repo are based on Anthropic's open source skills (Apa
 | test-driven-development | Write tests first, watch fail, write minimal code to pass |
 | testing-anti-patterns | Prevent testing mock behavior and production pollution |
 | testing-skills-with-subagents | Test skills with subagents before deployment |
+| theme-factory | Style artifacts with pre-set professional themes or custom themes on-the-fly |
 | using-git-worktrees | Create isolated git worktrees for feature work |
 | using-superpowers | Establish mandatory workflows for finding and using skills |
 | vercel-react-best-practices | React and Next.js performance optimization from Vercel Engineering |
 | vercel-web-design-guidelines | Review UI code for Web Interface Guidelines compliance |
 | verification-before-completion | Require running verification before claiming work complete |
+| web-artifacts-builder | Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui |
+| webapp-testing | Test local web applications using Playwright for UI verification and debugging |
 | web-design-guidelines | Review UI code for accessibility and best practices |
 | worktrees | Use git worktrees to parallelize development with agents |
 | writing-plans | Create implementation plans with exact file paths and code examples |
 | writing-skills | Create and test skills with TDD approach |
+| xlsx | Create, edit, and analyze Excel spreadsheets with formulas and visualization |
 | youtube-transcript | Download YouTube video transcripts |
 
 # Example Skills

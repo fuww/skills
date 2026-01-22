@@ -59,6 +59,62 @@ The example skills in this repo are based on Anthropic's open source skills (Apa
 
 **These skills are provided for demonstration and educational purposes only.** While some of these capabilities may be available in Claude, the implementations and behaviors you receive from Claude may differ from what is shown in these examples. These examples are meant to illustrate patterns and possibilities. Always test skills thoroughly in your own environment before relying on them for critical tasks.
 
+# Skills Overview
+
+| Skill | Description |
+|-------|-------------|
+| analytics-tracking | Set up, improve, or audit analytics tracking and measurement |
+| article-extractor | Extract clean article content from URLs without ads or clutter |
+| beads | Track work sessions and context across conversations |
+| brainstorming | Refine rough ideas into fully-formed designs through Socratic questioning |
+| brand-guidelines-fashionunited | Apply FashionUnited's official brand colors and typography |
+| cass | Coding Agent Session Search - search local coding agent history |
+| codex | Run Codex CLI for code analysis, refactoring, or automated editing |
+| condition-based-waiting | Replace arbitrary timeouts with condition polling for flaky tests |
+| copywriting | Write or improve marketing copy for pages |
+| defense-in-depth | Validate at every layer to make bugs structurally impossible |
+| dispatching-parallel-agents | Dispatch multiple agents to investigate independent problems concurrently |
+| doc-coauthoring | Structured workflow for co-authoring documentation |
+| executing-plans | Execute implementation plans in controlled batches with review checkpoints |
+| finishing-a-development-branch | Guide completion of development work with merge, PR, or cleanup options |
+| frontend-design | Create distinctive, production-grade frontend interfaces |
+| gemini | Run Gemini CLI for code review or big context (>200k) processing |
+| internal-comms | Write internal communications (status reports, newsletters, FAQs) |
+| launch-strategy | Plan product launches, feature announcements, or release strategies |
+| marketing-ideas | Marketing ideas and strategies for SaaS or software products |
+| mt-updates-fashionunited | Write monthly Management Team updates for FashionUnited |
+| notebooklm-skill | Query Google NotebookLM for source-grounded answers |
+| obsidian-markdown | Create Obsidian Flavored Markdown with wikilinks, callouts, etc. |
+| page-cro | Optimize conversions on marketing pages |
+| pricing-strategy | Help with pricing decisions, packaging, or monetization |
+| receiving-code-review | Handle code review feedback with technical rigor |
+| remotion-best-practices | Best practices for Remotion video creation in React |
+| requesting-code-review | Dispatch code-reviewer subagent to review implementation |
+| root-cause-tracing | Trace bugs backward through call stack to identify source |
+| seo-audit | Audit, review, or diagnose SEO issues |
+| sharing-skills | Contribute skills upstream via pull request |
+| shell-scripting | Bash scripting with defensive programming and ShellCheck compliance |
+| ship-learn-next | Transform learning content into actionable implementation plans |
+| skill-creator | Guide for creating effective skills |
+| social-content | Create and optimize social media content |
+| specification-document-generator | Generate architectural documents with requirements traceability |
+| subagent-driven-development | Execute plans with fresh subagent per task and code review |
+| systematic-debugging | Four-phase debugging framework ensuring understanding before fixes |
+| tapestry | Unified content extraction and action planning from URLs |
+| test-driven-development | Write tests first, watch fail, write minimal code to pass |
+| testing-anti-patterns | Prevent testing mock behavior and production pollution |
+| testing-skills-with-subagents | Test skills with subagents before deployment |
+| using-git-worktrees | Create isolated git worktrees for feature work |
+| using-superpowers | Establish mandatory workflows for finding and using skills |
+| vercel-react-best-practices | React and Next.js performance optimization from Vercel Engineering |
+| vercel-web-design-guidelines | Review UI code for Web Interface Guidelines compliance |
+| verification-before-completion | Require running verification before claiming work complete |
+| web-design-guidelines | Review UI code for accessibility and best practices |
+| worktrees | Use git worktrees to parallelize development with agents |
+| writing-plans | Create implementation plans with exact file paths and code examples |
+| writing-skills | Create and test skills with TDD approach |
+| youtube-transcript | Download YouTube video transcripts |
+
 # Example Skills
 
 This repository includes a diverse collection of example skills demonstrating different capabilities:

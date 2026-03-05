@@ -100,10 +100,9 @@
             default = pkgs.mkShell {
               packages = [
                 beads-rust
-                codex
                 gemini-cli
                 pkgs.git
-              ];
+              ] ++ (pkgs.lib.optionals (codexHashes ? ${system}) [ codex ]);
 
               shellHook = ''
                 echo "  Beads: $(br --version)"
